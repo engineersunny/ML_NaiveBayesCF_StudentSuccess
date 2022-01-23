@@ -1,0 +1,38 @@
+
+####delete this later
+    count_df[0] = train_inst.groupby(['school', 'Grade']).size().reset_index(name='count')
+    count_df.append(train_inst.groupby(['sex', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['address', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['famsize', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['Pstatus', 'Grade']).size().reset_index(name='count'))
+
+    count_df.append(train_inst.groupby(['Medu', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['Fedu', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['Mjob', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['Fjob', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['reason', 'Grade']).size().reset_index(name='count'))
+
+    count_df.append(train_inst.groupby(['guardian', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['traveltime', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['studytime', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['failures', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['schoolsup', 'Grade']).size().reset_index(name='count'))
+
+    count_df.append(train_inst.groupby(['famsup', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['paid', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['activities', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['nursery', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['higher', 'Grade']).size().reset_index(name='count'))
+
+    count_df.append(train_inst.groupby(['internet', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['romantic', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['famrel', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['freetime', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['goout', 'Grade']).size().reset_index(name='count'))
+
+    count_df.append(train_inst.groupby(['Dalc', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['Walc', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['health', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby(['absences', 'Grade']).size().reset_index(name='count'))
+    count_df.append(train_inst.groupby('Grade').size().reset_index(name='count')) #29
+    print(count_df)

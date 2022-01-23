@@ -1,0 +1,70 @@
+#got rid of these code temporariliy
+
+count_school = train_inst.groupby(['Grade', 'school']).size().reset_index(name='count')
+count_sex       = train_inst.groupby(['Grade', 'sex']).size().reset_index(name='count')
+    count_df.append(train_inst.groupby(['Grade', 'sex']).size().reset_index(name='count'))
+
+    count_address   = train_inst.groupby(['Grade', 'address']).size().reset_index(name='count')
+    count_famsize   = train_inst.groupby(['Grade', 'famsize']).size().reset_index(name='count')
+    count_Pstatus   = train_inst.groupby(['Grade', 'Pstatus']).size().reset_index(name='count')
+
+    count_Medu      = train_inst.groupby(['Grade', 'Medu']).size().reset_index(name='count')
+    count_Fedu      = train_inst.groupby(['Grade', 'Fedu']).size().reset_index(name='count')
+    count_Mjob      = train_inst.groupby(['Grade', 'Mjob']).size().reset_index(name='count')
+    count_Fjob      = train_inst.groupby(['Grade', 'Fjob']).size().reset_index(name='count')
+    count_reason    = train_inst.groupby(['Grade', 'reason']).size().reset_index(name='count')
+
+    count_guardian  = train_inst.groupby(['Grade', 'guardian']).size().reset_index(name='count')
+    count_traveltime= train_inst.groupby(['Grade', 'traveltime']).size().reset_index(name='count')
+    count_studytime = train_inst.groupby(['Grade', 'studytime']).size().reset_index(name='count')
+    count_failures  = train_inst.groupby(['Grade', 'failures']).size().reset_index(name='count')
+    count_schoolsup = train_inst.groupby(['Grade', 'schoolsup']).size().reset_index(name='count')
+
+    count_famsup    = train_inst.groupby(['Grade', 'famsup']).size().reset_index(name='count')
+    count_paid      = train_inst.groupby(['Grade', 'paid']).size().reset_index(name='count')
+    count_activities= train_inst.groupby(['Grade', 'activities']).size().reset_index(name='count')
+    count_nursery   = train_inst.groupby(['Grade', 'nursery']).size().reset_index(name='count')
+    count_higher    = train_inst.groupby(['Grade', 'higher']).size().reset_index(name='count')
+
+    count_internet  = train_inst.groupby(['Grade', 'internet']).size().reset_index(name='count')
+    count_romantic  = train_inst.groupby(['Grade', 'romantic']).size().reset_index(name='count')
+    count_famrel    = train_inst.groupby(['Grade', 'famrel']).size().reset_index(name='count')
+    count_freetime  = train_inst.groupby(['Grade', 'freetime']).size().reset_index(name='count')
+    count_goout     = train_inst.groupby(['Grade', 'goout']).size().reset_index(name='count')
+
+    count_Dalc      = train_inst.groupby(['Grade', 'Dalc']).size().reset_index(name='count')
+    count_Walc      = train_inst.groupby(['Grade', 'Walc']).size().reset_index(name='count')
+    count_health    = train_inst.groupby(['Grade', 'health']).size().reset_index(name='count')
+    count_absences  = train_inst.groupby(['Grade', 'absences']).size().reset_index(name='count')
+    count_Grade     = train_inst.groupby('Grade').size().reset_index(name='count')
+
+#variable
+count_sex       =[0]
+count_address   =[0]
+count_famsize   =[0]
+count_Pstatus   =[0]
+count_Medu      =[0]
+count_Fedu      =[0]
+count_Mjob      =[0]
+count_Fjob      =[0]
+count_reason    =[0]
+count_guardian  =[0]
+count_traveltime=[0]
+count_studytime =[0]
+count_failures  =[0]
+count_schoolsup =[0]
+count_famsup    =[0]
+count_paid      =[0]
+count_activities=[0]
+count_nursery   =[0]
+count_higher    =[0]
+count_internet  =[0]
+count_romantic  =[0]
+count_famrel    =[0]
+count_freetime  =[0]
+count_goout     =[0]
+count_Dalc      =[0]
+count_Walc      =[0]
+count_health    =[0]
+count_absences  =[0]
+count_Grade     =[0]
